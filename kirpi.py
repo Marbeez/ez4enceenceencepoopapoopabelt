@@ -5,16 +5,15 @@ tekst = [baidid.decode()]
 
 def otsib():
     a = 0
-    while (str(tekst)[0+a:i+a] == kogu_array) == False:
+    while (str(tekst)[9266+a : 9266+i+a] == kogu_array) == False:
         a += 1
     print("aha")
-
-kogu_array = []
 
 eesnimi = str(input("Sisestage malemängja eesnimi: ")).title()
 perenimi = str(input("Sisestage malemängja perekonnanimi: ")).title()
 
-kogu_array.append(perenimi + ", " + eesnimi)
+kogu_array = [perenimi + ", " + eesnimi]
+
 for i in kogu_array:
     i = len(i)
 
