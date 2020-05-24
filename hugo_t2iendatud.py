@@ -1,8 +1,6 @@
 from urllib.request import urlopen
 from easygui import *
 
-<<<<<<< HEAD
-=======
 def otsitavmängija (otsitav):
     tekstarray = []
     
@@ -21,7 +19,6 @@ def otsitavmängija (otsitav):
     tekstarray.append("Mängija koht edetabelis on: " + str(rank))
     return tekstarray
 
->>>>>>> pr/10
 edetabel = urlopen("https://ratings.fide.com/top.phtml?list=men")
 baidid = edetabel.read()
 tekst = baidid.decode()
@@ -32,23 +29,6 @@ nimed = multenterbox("Sisestage mängija ees- ja perekonnanimi", "Mängija otsij
 
 otsitav = nimed[1].title() + ", " + nimed[0].title()
 
-<<<<<<< HEAD
-algus = tekst.index(otsitav)
-
-temp_algus = algus + 53 + len(otsitav)  
-elo = tekst[temp_algus:temp_algus+4]
-
-i = 9266
-rank = 0
-
-while i < algus:
-    i += 225
-    rank += 1
-    
-print(elo)
-print(rank)
-msgbox("Mängija ELO on: " + str(elo) + "\n" + "Mängija koht edetabelis on: " + str(rank)) #siia võid lisada veel ridu \n-iga mingi riik jms
-=======
 infotekst = ""
 i = 1
 
@@ -60,6 +40,5 @@ for line in otsitavmängija(otsitav):
         i += 1
 
 msgbox(infotekst)
->>>>>>> pr/10
 
 #easygui täiendatud infot lisaks kursusematerjalile saime siit: http://easygui.sourceforge.net/tutorial.html
