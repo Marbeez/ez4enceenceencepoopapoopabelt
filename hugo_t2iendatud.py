@@ -25,6 +25,6 @@ while i < algus:
     
 print(elo)
 print(rank)
-msgbox("Mängija ELO on: " + str(elo) + "\n" + "Mängija koht edetabelis on: " + str(rank))
+msgbox("Mängija ELO on: " + str(elo) + "\n" + "Mängija koht edetabelis on: " + str(rank)) #siia võid lisada veel ridu \n-iga mingi riik jms
 
 #easygui täiendatud infot lisaks kursusematerjalile saime siit: http://easygui.sourceforge.net/tutorial.html
