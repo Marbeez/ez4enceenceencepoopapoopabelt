@@ -36,3 +36,12 @@ infojärjend.append('Elo reiting: ' + elo)
 infojärjend.append('Asukoht FIDE top 100 mängijate edetabelis: ' + str(asukoht) + '. kohal')
 for i in infojärjend:
     print(i)
+
+valikud = ["Nime järgi", "Edetabeli asukoha järgi (100 piires)"]
+valikubox = buttonbox("Valige, mille järgi otsite mängija kohta infot", image="malem2ngija.gif", choices=valikud)
+if valikubox == "Nime järgi":
+    #siin on otsimine nime järgi
+    print("xqc")
+else:
+    #otsimine asukoha järgi
+    print("doc")

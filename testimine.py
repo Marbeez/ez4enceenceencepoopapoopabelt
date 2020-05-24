@@ -1,12 +1,8 @@
-from urllib.request import urlopen
-
-edetabel = urlopen("https://ratings.fide.com/top.phtml?list=men")
-baidid = edetabel.read()
-tekst = baidid.decode()
-
-eesnimi = str(input("Sisestage malemängja eesnimi: ")).lower()
-perenimi = str(input("Sisestage malemängja perekonnanimi: ")).lower()
-
-otsitav = perenimi.title() + ", " + eesnimi.title()
-
-print(otsitav)
+from easygui import *
+valikud = ["Nime järgi", "Edetabeli asukoha järgi (100 piires)"]
+valikubox = buttonbox("Valige, mille järgi otsite mängija kohta infot", image="malem2ngija.gif", choices=valikud)
+if valikubox == "Nime järgi":
+    #siin on otsimine nime järgi
+    print("xqc")
+else:
+    print("doc")
