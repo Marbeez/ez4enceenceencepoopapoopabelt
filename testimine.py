@@ -68,8 +68,8 @@ else:
         i += 225
         asukoht += 1
         
-    nimi = nimi.replace(",", "")
-    nimejärjend = nimi.split()
+    nimi = nimi.replace(",", ":")
+    nimejärjend = nimi.split(":")
     täisnimi = ""
     for nimi in reversed(nimejärjend):
         if nimejärjend.index(nimi) == 0:
@@ -77,7 +77,7 @@ else:
         else:
             täisnimi += nimi + " "
 
-    infojärjend = ['Mängija nimi (eesnimi- ja perekonnanimi): ' + täisnimi]
+    infojärjend = ['Mängija nimi (ees- ja perekonnanimi): ' + täisnimi]
     infojärjend.append('Elo reiting: ' + elo)
     infojärjend.append('Asukoht FIDE top 100 mängijate edetabelis: ' + str(asukoht) + '. kohal')
     koguinfo = ""
